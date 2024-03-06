@@ -1,4 +1,4 @@
-pkgbase = linux-aarch64-orangepi5
+pkgbase = linux-aarch64-rockchip-rk3588-bsp5.10-orangepi
 	pkgver = 5.10.110
 	pkgrel = 6
 	url = https://github.com/orangepi-xunlong/linux-orangepi
@@ -11,7 +11,7 @@ pkgbase = linux-aarch64-orangepi5
 	options = !strip
 	options = !distcc
 	source = linux-orangepi-eb1c681e5184e51d8ce1f351559d149d17f48b57.tar.gz::https://github.com/orangepi-xunlong/linux-orangepi/archive/eb1c681e5184e51d8ce1f351559d149d17f48b57.tar.gz
-	source = gcc12-fixups.patch::https://github.com/7Ji-PKGBUILDs/linux-aarch64-orangepi5/releases/download/assets/sha256-e9c720fa4dba291f3a87a04eb9245fcf99cd0c4164d2c5deefe7ca35eedf1960-gcc12-fixups.patch
+	source = gcc12-fixups.patch::https://github.com/7Ji-PKGBUILDs/linux-aarch64-rockchip-rk3588-bsp5.10-orangepi/releases/download/assets/sha256-e9c720fa4dba291f3a87a04eb9245fcf99cd0c4164d2c5deefe7ca35eedf1960-gcc12-fixups.patch
 	source = config
 	source = linux.preset
 	sha256sums = 93ebccfed4d5d1f5a1612c06520a83346fcf4522dcf50c67bae11359f3f32d85
@@ -19,16 +19,16 @@ pkgbase = linux-aarch64-orangepi5
 	sha256sums = 325e4afdc16e1eb34e18e651b0c7b8cb43a60ade086d8388aa5667d913157e55
 	sha256sums = bdcd6cbf19284b60fac6d6772f1e0ec2e2fe03ce7fe3d7d16844dd6d2b5711f3
 
-pkgname = linux-aarch64-orangepi5
-	pkgdesc = The Linux Kernel and module - AArch64 vendor kernel for Orange Pi 5
+pkgname = linux-aarch64-rockchip-rk3588-bsp5.10-orangepi
+	pkgdesc = The Linux Kernel and module - AArch64 Rockchip vendor kernel (BSP5.10 for RK3588, OrangePi fork)
 	depends = coreutils
 	depends = initramfs
 	depends = kmod
 	optdepends = uboot-legacy-initrd-hooks: to generate uboot legacy initrd images
 	optdepends = linux-firmware: firmware images needed for some devices
 	optdepends = wireless-regdb: to set the correct wireless channels of your country
-	backup = etc/mkinitcpio.d/linux-aarch64-orangepi5.preset
+	backup = etc/mkinitcpio.d/linux-aarch64-rockchip-rk3588-bsp5.10-orangepi.preset
 
-pkgname = linux-aarch64-orangepi5-headers
-	pkgdesc = Header files and scripts for building modules for linux kernel - AArch64 vendor kernel for Orange Pi 5
+pkgname = linux-aarch64-rockchip-rk3588-bsp5.10-orangepi-headers
+	pkgdesc = Header files and scripts for building modules for linux kernel - AArch64 Rockchip vendor kernel (BSP5.10 for RK3588, OrangePi fork)
 	depends = python

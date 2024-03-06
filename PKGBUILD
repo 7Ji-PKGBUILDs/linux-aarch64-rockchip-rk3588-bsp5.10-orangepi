@@ -1,13 +1,11 @@
 # Maintainer: 7Ji <pugokughin@gmail.com>
 
-_desc="AArch64 vendor kernel for Orange Pi 5"
+_desc="AArch64 Rockchip vendor kernel (BSP5.10 for RK3588, OrangePi fork)"
 _pkgver_main=5.10.110
-_pkgver_suffix=orangepi5
-_pkgver_uname="${_pkgver_main}-${_pkgver_suffix}"
 _orangepi_repo='linux-orangepi'
 _orangepi_commit='eb1c681e5184e51d8ce1f351559d149d17f48b57'
 _srcname="${_orangepi_repo}-${_orangepi_commit}"
-pkgbase=linux-aarch64-${_pkgver_suffix}
+pkgbase=linux-aarch64-rockchip-rk3588-bsp5.10-orangepi
 pkgname=(
   "${pkgbase}"
   "${pkgbase}-headers"
