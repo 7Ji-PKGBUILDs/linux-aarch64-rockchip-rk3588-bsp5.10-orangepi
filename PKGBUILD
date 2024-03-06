@@ -42,7 +42,7 @@ prepare() {
   echo "Setting version..."
   scripts/setlocalversion --save-scmversion
   echo "-$pkgrel" > localversion.10-pkgrel
-  echo "${pkgbase#linux}" > localversion.20-pkgname
+  echo '-aarch64-rk3588-bsp5.10' > localversion.20-pkgname
 
   # Prepare the configuration file
   cat "${srcdir}/config" > '.config'
